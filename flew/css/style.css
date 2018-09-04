@@ -1222,6 +1222,15 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
+.btn .py-btn{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 
 
 
