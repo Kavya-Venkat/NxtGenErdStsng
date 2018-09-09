@@ -107,11 +107,10 @@
 	   <h3 align="Left">(June 15th - 16th - 17th)</h3>
 When the whole world is in celebration of the 93rd year of the advent of our Iraivan Sri Sathya sai, <b>we the erode district sai devotees about 1008 in number</b>, have gathered  in this sacred sai kulwant hall, at His abode with prayerful gratitude, as a part of the third pavitra parthi yatra from June 15th to June 17th of the year 2018, for a period of three days. </b>Incidentally, this year 2018, happens to be the mark of the 50th year of the commencement of Erode samithy and 60th year of bhajana mandali under direct divine guidance of our beloved Swami.</b> 
 <br><br>
-This holy occasion also marks the <b>12th Annual Sadhana Camp</b> of our Erode Past Balvikas Alumni which includes Alumni of Sri Sathya Sai University too.
+This holy occasion also marks the <b>12th Annual Sadhana Camp</b> of our Erode Past Balvikas Alumni which includes Alumni of Sri Sathya Sai University too. 
 					
 	   <div>
-  <br>
- <span id="text">With the pure thought of involving all the past balavikas families in sathsang who are united by the undercurrent of the Love of our mother Sai, <b>more than a decade ago in the year 2007, the past balavikas alumni from Erode district, started the annual sadhana camp at Erode.</b>
+ <span id="text"><br>With the pure thought of involving all the past balavikas families in sathsang who are united by the undercurrent of the Love of our mother Sai, <b>more than a decade ago in the year 2007, the past balavikas alumni from Erode district, started the annual sadhana camp at Erode.</b>
 <br><br>
 					What was started as a small effort, has grown over years into what it is today, where all the Sai families across all the samithies and balavikas centres from the length and breadth of our erode district and its regions take part, rejoicing the glory of our Iraivan Sri Sathya sai.
 					It is heartening to know that, the baton of the Sadhana camp is passed on to the second, third and so on to the generations of balavikas alumni, which reinstates the faith that, the Sadhana camp will go on and on for eternity.
@@ -124,19 +123,21 @@ This holy occasion also marks the <b>12th Annual Sadhana Camp</b> of our Erode P
 					This presentation involved balavikas children, youth and alumni of Sathya Sai Institute of Higher learning, totaling 108, a sacred number.
 <br><br>
 					On the third day morning, which was also the final day of the pavithra parthi yatra, another musical drama presentation entitled <b>'Sri Sathya Sai Sthree Dharma Bothini'</b>, which described about the strength and values the sthree's(women), <b>for the first time ever in Sai Kulwant Hall</b> was offered at Swami's lotus feet.
-					<br><br>
+					<br>
   
   </span>
 </div>
-<div class="btn-container">
+<!-- <div class="btn-container">
 <button class="btn btn-primary with-arrow" id="toggle">Read More</button>
+</div> -->
+<!-- Commented above btn-container and changed to plain text with toggle option. SaiPrasanna: Sept 9 2018. -->
+<div style="color:#cb663a" role="button" id="toggle"><b>Read More >></b></div>
 </div>
-					</div>
-					<br><br><br>
-					<div class="col-md-4">
-					<!--Use below Links to navigate.-->
+<br><br><br>
+
+<div class="col-md-4">
 					
- </p><br>
+</p><br>
 			<a href="" > >> Day 1 - Ratha Yatra </a><br>
 			<a href="../mbgc/mbgc.html" > >> Day 2 - Manasa Bhajare Guru Charanam </a><br>
 			<a href="../sdb/sdb.html" > >> Day 3 - Sri Sathya Sai Sthree Dharma Bodhini </a>
@@ -198,13 +199,13 @@ $(document).ready(function() {
  $("#text").slideUp();
   $("#toggle").click(function() {
     var elem = $("#toggle").text();
-    if (elem == "Read More") {
+    if (elem == "Read More >>") {
       //Stuff to do when btn is in the read more state
-      $("#toggle").text("Read Less");
+      $("#toggle").text("<< Read Less");
       $("#text").slideDown();
     } else {
       //Stuff to do when btn is in the read less state
-      $("#toggle").text("Read More");
+      $("#toggle").text("Read More >>");
       $("#text").slideUp();
     }
   });
