@@ -22,15 +22,30 @@ body {
   position: relative;
 }
 
+/* =========================
+*  Base link color changed to Brick Brown (#cb663a)
+*  Hover changed to blue (blue)
+*  Visited changed to Blue
+*  Font size decreased (font-size: 0.875em;)
+*  SaiPrasanna 9 Sept 2018
+*/
 a {
-  color: #27E1CE;
+  color: #cb663a; 
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  font-size: 0.875em; 
+  font-weight: bold;
 }
 a:hover, a:active, a:focus {
-  color: #27E1CE;
+  color: blue;
   outline: none;
+}
+a:link {
+  color: #cb663a;
+  outline: none;
+  font-size: 0.875em; 
+  font-weight: bold;
 }
 
 p {
@@ -1220,6 +1235,15 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.btn .py-btn{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 
