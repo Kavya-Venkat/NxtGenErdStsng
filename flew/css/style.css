@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color:transparent;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -372,7 +373,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 38px 0 0 0;
 }
 #fh5co-header nav {
-  float: right;
+  float: left;
   padding: 0;
 }
 @media screen and (max-width: 768px) {
@@ -1237,19 +1238,11 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
-.btn .py-btn{
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
 
 .dropdown:hover .dropdown-menu {
     display: block;
     background-color: white;
-    min-width: 200px;
+    min-width: 100px;
     margin-top: 0; // remove the gap so it doesn't close
  }
  
