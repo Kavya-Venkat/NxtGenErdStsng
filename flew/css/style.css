@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 38px 0 0 0;
 }
 #fh5co-header nav {
-  float: left;
+  float: right;
   padding: 0;
 }
 @media screen and (max-width: 768px) {
