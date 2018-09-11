@@ -100,9 +100,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #cb663a;
+  background: #3de4d3;
   color: #fff;
-  border: 2px solid #cb663a;
+  border: 2px solid #3de4d3;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #3de4d3 !important;
