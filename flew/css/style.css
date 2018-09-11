@@ -1248,8 +1248,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+    background-color: white;
+    min-width: 200px;
     margin-top: 0; // remove the gap so it doesn't close
  }
+ 
 
 
 /*# sourceMappingURL=style.css.map */
