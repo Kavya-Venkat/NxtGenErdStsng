@@ -16,8 +16,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #7f7f7f;
-  background: #fff;
+  color: black;
+  background: white;
   height: 100%;
   position: relative;
 }
@@ -1244,7 +1244,29 @@ h1, h2, h3, h4, h5, h6, figure {
     background-color: white;
     min-width: 100px;
     margin-top: 0; // remove the gap so it doesn't close
- }
+}
+ 
+<style>
+table {
+	border: 3px solid black;
+    font-family: arial, sans-serif;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 7px;
+	width: 40%;
+}
+
+tr:nth-child(even) {
+    background-color: #fff7bc;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+</style>
  
 
 
