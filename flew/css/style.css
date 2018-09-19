@@ -76,10 +76,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .btn {
   margin-right: 4px;
+  color: rgba(0, 0, 0, 0.7);
   margin-bottom: 4px;
   font-family: "Raleway", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+     font-size: 18px;
+    font-weight: bold;
   background-color:transparent;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -320,7 +321,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-header {
   width: 100%;
-  margin: 0;
+  background-color:#FABC39;
+ 
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
@@ -328,7 +330,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-header .header-inner {
-  height: 80px;
+ /* height: 80px;*/
   padding-left: 20px;
   padding-right: 20px;
   float: left;
@@ -372,9 +374,9 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header h1, #fh5co-header nav {
   margin: 38px 0 0 0;
 }
-#fh5co-header nav {
-  float: right;
-  padding: 0;
+#header-row {
+margin-left: 0px;
+    margin-right: 0px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header nav {
@@ -383,13 +385,16 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header nav ul {
   padding: 0;
-  margin: 0 -0px 0 0;
+
+  border: 2px solid #E08909;
   line-height: 0;
 }
 #fh5co-header nav ul li {
   padding: 0;
   margin: 0;
   list-style: none;
+  border-right: 2px solid #E08909;
+   border-left: 2px solid #E08909;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -881,11 +886,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
-  padding: 7em 0;
   float: left;
   width: 100%;
   position: relative;
-  background: #262626;
+  background: #FABC39;
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer {
@@ -1238,13 +1242,20 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
-
-.dropdown:hover .dropdown-menu {
+#my-dropdown{
+	border:none;
+}
+#my-dropdown li{
+	border:none;
+}
+.dropdown:hover ul {
     display: block;
     background-color: white;
+	    
     min-width: 100px;
     margin-top: 0; // remove the gap so it doesn't close
 }
+
  
 <style>
 table {
