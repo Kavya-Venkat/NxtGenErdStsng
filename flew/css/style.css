@@ -75,12 +75,14 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn {
-  margin-right: 4px;
-  color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 4px;
+  /*margin-right: 4px;             -----  Changed line Sept 20: SaiPrasanna -----    */
+  /*color: rgba(0, 0, 0, 0.7);     -----  Changed line Sept 20: SaiPrasanna -----    */
+  color: white;
+  /*margin-bottom: 4px;            -----  Changed line Sept 20: SaiPrasanna -----    */
   font-family: "Raleway", Arial, sans-serif;
-     font-size: 18px;
-    font-weight: bold;
+  /*font-size: 18px;                                  -----  Changed line Sept 20: SaiPrasanna -----    */
+  font-size: 14px;
+  font-weight: bold;
   background-color:transparent;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -97,8 +99,10 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 18px 36px !important;
 }
 .btn:hover, .btn:active, .btn:focus {
+  color: #cb663a;                             /* ADDED -----  Changed line Sept 20: SaiPrasanna -----    */
   box-shadow: none !important;
   outline: none !important;
+  transition: 0.1s;                           
 }
 
 .btn-primary {
@@ -321,7 +325,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-header {
   width: 100%;
-  background-color:#FABC39;
+  /*background-color:#FABC39;       -----  Changed line Sept 20: SaiPrasanna -----    */
+  background-color:#105893       /* Header Background color changed to (#105893 - Shade of Blue) */
  
 }
 @media screen and (max-width: 768px) {
@@ -345,7 +350,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   font-weight: 700;
   line-height: 0;
-  font-size: 30px;
+  font-size: 3px;
 }
 #fh5co-header h1 a {
   position: relative;
@@ -372,7 +377,8 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 #fh5co-header h1, #fh5co-header nav {
-  margin: 38px 0 0 0;
+  /*margin: 38px 0 0 0;               -----  Changed line Sept 20: SaiPrasanna -----    */
+  margin: 17px 0 0 0;                 /* Too much margin gap between image and menu bar*/
 }
 #header-row {
 margin-left: 0px;
@@ -385,24 +391,28 @@ margin-left: 0px;
 }
 #fh5co-header nav ul {
   padding: 0;
-
-  border: 2px solid #E08909;
+  /*border: 2px solid #E08909;       -----  Changed line Sept 20: SaiPrasanna -----    */
+  border: 1px solid white;          /* Header Menu bar type BORDER color changed to white */
   line-height: 0;
 }
 #fh5co-header nav ul li {
   padding: 0;
   margin: 0;
   list-style: none;
-  border-right: 2px solid #E08909;
-   border-left: 2px solid #E08909;
+  /*border-right: 2px solid #E08909;      -----  Changed line Sept 20: SaiPrasanna -----    
+  border-left: 2px solid #E08909;         -----  Changed line Sept 20: SaiPrasanna -----    */
+  border-right: 1px solid white;        /* Border header menu bar right side left side border*/
+  border-left: 1px solid white;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
 #fh5co-header nav ul li a {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 18px;
+  /*color: rgba(0, 0, 0, 0.7);         -----  Changed line Sept 20: SaiPrasanna -----    
+  font-size: 18px;                     -----  Changed line Sept 20: SaiPrasanna -----    */
+  color: white;                         /* Font color in menu bar changed to white, font size reduced */
+  font-size: 14px;
   padding: 10px;
   position: relative;
   -webkit-transition: 0.2s;
@@ -1250,8 +1260,8 @@ margin-left: 0px;
 }
 .dropdown:hover ul {
     display: block;
-    background-color: white;
-	    
+	/*background-color: white;            -----  Changed line Sept 20: SaiPrasanna -----    */
+    background-color: #105893;             /* Dropdown background color changed to blue shade*/   
     min-width: 100px;
     margin-top: 0; // remove the gap so it doesn't close
 }
