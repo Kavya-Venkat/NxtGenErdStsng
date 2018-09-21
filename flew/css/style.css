@@ -422,14 +422,14 @@ margin-left: 0px;
   position: relative;
   top: 3px;
 }
-#fh5co-header nav ul li a:after {
+#fh5co-header nav ul li a:after { /* This is the Place to change font for Dropdown header after hover*/
   content: "";
   position: absolute;
   height: 2px;
   bottom: 7px;
   left: 10px;
   right: 10px;
-  background-color: #cb663a;
+  background-color: transparent;  /* any specific color will have an underline effect on dropdown contents*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -1255,15 +1255,20 @@ margin-left: 0px;
 #my-dropdown li{
 	border:none;
 }
+.dropdown:hover li {                      /* All the dropdown is written as list <li>*/
+    display: block;
+    background-color: #105893;   
+    min-width: 160px;    
+	margin-top: 0;                         /* remove the gap so it doesn't close*/	
+}
 .dropdown:hover ul {
     display: block;
 	/*background-color: white;            -----  Changed line Sept 20: SaiPrasanna -----    */
     background-color: #105893;             /* Dropdown background color changed to blue shade*/   
-    min-width: 100px;
-    margin-top: 0; // remove the gap so it doesn't close
+    min-width: 160px;
+    margin-top: 0;                         /* remove the gap so it doesn't close*/
 }
 
- 
 <style>
 table {
 	border: 3px solid black;
