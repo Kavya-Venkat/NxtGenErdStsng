@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-header .header-inner {
-  height: 160px;
+  height: 152px;                         /* Header length to be changed here */
   padding-left: 20px;
   padding-right: 20px;
   float: left;
@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header h1, #fh5co-header nav {
   /*margin: 38px 0 0 0;               -----  Changed line Sept 20: SaiPrasanna -----    */
-  margin: 17px 0 0 0;                 /* Too much margin gap between image and menu bar*/
+  margin: 0px 0 0 0;                 /* Too much margin gap between image and menu bar*/
 }
 #header-row {
 margin-left: 0px;
