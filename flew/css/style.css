@@ -75,11 +75,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn {
-  margin-right: 4px;
-  margin-bottom: 4px;
+  /*margin-right: 4px;             -----  Changed line Sept 20: SaiPrasanna -----    */
+  /*color: rgba(0, 0, 0, 0.7);     -----  Changed line Sept 20: SaiPrasanna -----    */
+  color: white;
+  /*margin-bottom: 4px;            -----  Changed line Sept 20: SaiPrasanna -----    */
   font-family: "Raleway", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  /*font-size: 18px;                                  -----  Changed line Sept 20: SaiPrasanna -----    */
+  font-size: 14px;
+  font-weight: bold;
+  background-color:transparent;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -95,8 +99,10 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 18px 36px !important;
 }
 .btn:hover, .btn:active, .btn:focus {
+  color: #cb663a;                             /* ADDED -----  Changed line Sept 20: SaiPrasanna -----    */
   box-shadow: none !important;
   outline: none !important;
+  transition: 0.1s;                           
 }
 
 .btn-primary {
@@ -319,7 +325,9 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-header {
   width: 100%;
-  margin: 0;
+  /*background-color:#FABC39;       -----  Changed line Sept 20: SaiPrasanna -----    */
+  background-color:#105893       /* Header Background color changed to (#105893 - Shade of Blue) */
+ 
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
@@ -327,7 +335,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-header .header-inner {
-  height: 80px;
+  height: 152px;                         /* Header length to be changed here */
   padding-left: 20px;
   padding-right: 20px;
   float: left;
@@ -342,7 +350,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   font-weight: 700;
   line-height: 0;
-  font-size: 30px;
+  font-size: 3px;
 }
 #fh5co-header h1 a {
   position: relative;
@@ -369,11 +377,12 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 #fh5co-header h1, #fh5co-header nav {
-  margin: 38px 0 0 0;
+  /*margin: 38px 0 0 0;               -----  Changed line Sept 20: SaiPrasanna -----    */
+  margin: 0px 0 0 0;                 /* Too much margin gap between image and menu bar*/
 }
-#fh5co-header nav {
-  float: right;
-  padding: 0;
+#header-row {
+margin-left: 0px;
+    margin-right: 0px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header nav {
@@ -382,21 +391,25 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header nav ul {
   padding: 0;
-  margin: 0 -0px 0 0;
+  border: none;          			/* Header Menu NO BORDER*/
   line-height: 0;
 }
 #fh5co-header nav ul li {
   padding: 0;
   margin: 0;
   list-style: none;
+  border-right: noone;     
+  border-left: none;              /* Header menu bar right side left side border NONE*/
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
 #fh5co-header nav ul li a {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 18px;
+  /*color: rgba(0, 0, 0, 0.7);         -----  Changed line Sept 20: SaiPrasanna -----    
+  font-size: 18px;                     -----  Changed line Sept 20: SaiPrasanna -----    */
+  color: white;                         /* Font color in menu bar changed to white, font size reduced */
+  font-size: 14px;
   padding: 10px;
   position: relative;
   -webkit-transition: 0.2s;
@@ -409,14 +422,14 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   top: 3px;
 }
-#fh5co-header nav ul li a:after {
+#fh5co-header nav ul li a:after { /* This is the Place to change font for Dropdown header after hover*/
   content: "";
   position: absolute;
   height: 2px;
   bottom: 7px;
   left: 10px;
   right: 10px;
-  background-color: #cb663a;
+  background-color: transparent;  /* any specific color will have an underline effect on dropdown contents*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -880,11 +893,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-footer {
-  padding: 7em 0;
   float: left;
   width: 100%;
   position: relative;
-  background: #262626;
+  background: #FABC39;
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer {
@@ -1237,22 +1249,26 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
-.btn .py-btn{
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
+#my-dropdown{
+	border:none;
+}
+#my-dropdown li{
+	border:none;
+}
+.dropdown:hover li {                      /* All the dropdown is written as list <li>*/
+    display: block;
+    background-color: #105893;   
+    min-width: 160px;    
+	margin-top: 0;                         /* remove the gap so it doesn't close*/	
+}
+.dropdown:hover ul {
+    display: block;
+	/*background-color: white;            -----  Changed line Sept 20: SaiPrasanna -----    */
+    background-color: #105893;             /* Dropdown background color changed to blue shade*/   
+    min-width: 160px;
+    margin-top: 0;                         /* remove the gap so it doesn't close*/
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    background-color: white;
-    min-width: 200px;
-    margin-top: 0; // remove the gap so it doesn't close
-}
- 
 <style>
 table {
 	border: 3px solid black;
